@@ -1,5 +1,7 @@
 # SRTS — Supply Request Tracking System
 
+*Sanitized snapshot of my private repository (36 commits, Mar to Aug 2026), published Aug 2026 as a code sample. Provisioning scripts were left out, and it contains no client data or secrets.*
+
 **Floor-to-supervisor supply requests, tracked in real time.**
 
 [**Live demo →**](https://srts.autoriseconsulting.com/autorise) · part of a multi-tenant suite built for small and mid-market operations teams
@@ -82,6 +84,8 @@ npm run dev
 ```
 
 Apply the SQL in `supabase/` to your own project first, then visit `/your-company-slug`.
+The `managers` table and two small migrations for custom location labels live in the
+production project but are not in this snapshot, so a fresh setup needs those added.
 
 ```bash
 npm run build     # production build
